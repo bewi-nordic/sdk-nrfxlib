@@ -74,7 +74,7 @@ extern "C" {
  */
 
 /** @brief Maximum number of bytes required per master link for the default buffer configuration. */
-#define SDC_MEM_DEFAULT_MASTER_LINK_SIZE 788
+#define SDC_MEM_DEFAULT_MASTER_LINK_SIZE 878
 
 /** @brief Maximum number of bytes required per slave link for the default buffer configuration. */
 #define SDC_MEM_DEFAULT_SLAVE_LINK_SIZE 940
@@ -284,15 +284,6 @@ int32_t sdc_disable(void);
  * @retval -NRF_EINVAL  Invalid argument provided
  */
 int32_t sdc_build_revision_get(uint8_t * p_build_revision);
-
-
-/** @brief SoftDevice Controller RNG interrupt handler
- *
- * @note This function should be called when a RNG interrupt occurs. The
- *       interrupt priority level should be lower than priority level 0, that
- *       is, a higher numerical priority value.
- */
-void sdc_RNG_IRQHandler(void);
 
 /** @brief Support Advertising State
  *
